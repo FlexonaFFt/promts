@@ -24,6 +24,7 @@ This project will not only help me deepen my knowledge of modern technologies, b
 
 <details><summary>Техническое задание</summary>
 
+
 - Разработать красивый и минималистичный интерфейс
 - Реализовать аккаунты пользователей, посты (промты)
 - В полной мере разработать возможность создания новых промтов, отслеживание существующих промтов, регистрация, вход в аккаунт
@@ -53,6 +54,8 @@ This project will not only help me deepen my knowledge of modern technologies, b
 
 
 <details><summary>Technical specification</summary>
+
+  
 - Develop a beautiful and minimalistic interface
 - Implement user accounts, posts (promts)
 - Fully develop the ability to create new promts, track existing promts, register, log into an account
