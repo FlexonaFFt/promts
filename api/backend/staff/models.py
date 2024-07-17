@@ -2,7 +2,7 @@ import random
 import string
 from django.db import models, IntegrityError
 
-class UserProfiles(models.Model):
+class UserProfile(models.Model):
     user_id = models.CharField(max_length=6, primary_key=True)
     nickname = models.CharField(max_length=50)
     tag = models.CharField(max_length=20)
@@ -17,13 +17,14 @@ class UserProfiles(models.Model):
             except IntegrityError:
                 continue
 
-class Promts(models.Model):
+class Promt(models.Model):
     post_id = models.CharField(max_length=6, primary_key=True)
     title = models.CharField(max_length=100)
     promtext = models.TextField()
     description = models.TextField()
     tags = models.CharField(max_length=100)
     date = models.DateField(auto_now_add=True)
+    verified = models.BooleanField(default=False)
 
     def save(self, *args, **kwargs):
         while True:

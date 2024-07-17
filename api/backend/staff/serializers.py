@@ -1,12 +1,12 @@
 from rest_framework import serializers
-from .models import UserProfiles, Promts
+from .models import UserProfile, Promt
 
-class UserProfilesSerializer(serializers.ModelSerializer):
+class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
-        model = UserProfiles
+        model = UserProfile
         fields = '__all__'
 
-class PromtsSerializer(serializers.ModelSerializer):
+class PromtSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Promts
+        model = Promt
         fields = '__all__'

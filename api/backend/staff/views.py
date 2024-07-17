@@ -1,12 +1,12 @@
 #type: ignore
 from rest_framework import viewsets
-from .models import UserProfiles, Promts
-from .serializers import UserProfilesSerializer, PromtsSerializer
+from .models import UserProfile, Promt
+from .serializers import UserProfileSerializer, PromtSerializer
 
 class UserProfilesViewSet(viewsets.ModelViewSet):
-    queryset = UserProfiles.objects.all()
-    serializer_class = UserProfilesSerializer
+    queryset = UserProfile.objects.all()
+    serializer_class = UserProfileSerializer
 
 class PromtsViewSet(viewsets.ModelViewSet):
-    queryset = Promts.objects.all()
-    serializer_class = PromtsSerializer
+    queryset = Promt.objects.all()
+    serializer_class = PromtSerializer
