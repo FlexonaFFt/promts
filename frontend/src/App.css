@@ -1,12 +1,16 @@
 :root {
     /* Цвета для тёмной темы */
-    --main-bg: #000;
+    --main-bg: #212529;
     --main-accient-color: #fff;
     --main-bg-accient: #212529;
 }
 
-.App {
+.body {
     background-color: var(--main-bg);
+}
+
+.container {
+    position: relative;
 }
 
 .left-container {
@@ -17,4 +21,7 @@
     margin: 10px;
     border-radius: 10px;
     border: 2px solid var(--main-accient-color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }

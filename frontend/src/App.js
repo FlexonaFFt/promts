@@ -1,10 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <div className="left-container"></div>
+    <div className="body">
+      <div className="container left-container"></div>
     </div>
   );
 }
