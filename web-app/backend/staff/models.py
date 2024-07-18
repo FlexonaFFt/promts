@@ -4,6 +4,8 @@ from django.db import models, IntegrityError
 
 class UserProfile(models.Model):
     user_id = models.CharField(max_length=6, primary_key=True)
+    email = models.CharField(max_length=50)
+    password = models.CharField(max_length=50)
     nickname = models.CharField(max_length=50)
     tag = models.CharField(max_length=20)
     registration_date = models.DateField(auto_now_add=True)
