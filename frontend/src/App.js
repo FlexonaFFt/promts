@@ -2,9 +2,9 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="body">
+    <section className="body">
       <div className="container left-container"></div>
-    </div>
+    </section>
   );
 }
 
