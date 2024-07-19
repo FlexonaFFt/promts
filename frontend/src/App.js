@@ -2,10 +2,11 @@ import "./App.css";
 
 function App() {
   return (
-    <section className="main-containers">
-      <div className="container left-container"></div>
-      <div className="container right-container"></div>
-    </section>
+    <body>
+      <section className="main-panel">
+        <p>Somethig wet wrong!!!</p>
+      </section>
+    </body>
   );
 }
 

@@ -1,31 +1,26 @@
 :root {
     /* Цвета для тёмной темы */
-    --main-bg: #212529;
+    --main-bg: #212121;
     --main-accient-color: #fff;
     --main-bg-accient: #212529;
 }
 
-.main-containers {
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    background-color: #f7f7f7; /* Серый фон */
-    height: 98vh;
-    padding: 15px;
-    border: 1px solid #ccc; /* Ободок по периметру */
+    background-color: var(--main-bg);
 }
 
-.left-container {
-    width: 32%; /* Установите ширину левого контейнера */
-    background-color: #fff; /* Белый фон */
-    border: 1px solid #ccc; /* Ободок по периметру */
-    padding: 20px;
-}
+.main-panel {
+    width: 80%;
+    height: 95%;
+    margin: 20px;
+    margin-left: 150px;
 
-.right-container {
-    width: 60%; /* Установите ширину правого контейнера */
-    background-color: #fff; /* Белый фон */
-    border: 1px solid #ccc; /* Ободок по периметру */
-    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: var(--main-accient-color);
 }
